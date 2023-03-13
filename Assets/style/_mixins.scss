@@ -1,0 +1,21 @@
+@mixin mainShadow {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@mixin media($viewSize) {
+    @if ($viewSize == mobile) {
+        @media (max-width: 768px) {
+            @content;
+        }
+    } @else if ($viewSize == PC) {
+        @media (min-width: 769px) {
+            @content;            
+        }
+    }
+    // @else if ($viewSize == TV) {
+    //     @media (min-width: 1201px) {
+    //         @content;            
+    //     }
+        
+    // } 
+}

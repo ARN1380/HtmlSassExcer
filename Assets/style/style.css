@@ -1,0 +1,232 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  background-color: rgb(176, 93, 255);
+  color: aliceblue;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 2em;
+}
+
+.lined-nav ul {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.lined-nav ul li {
+  margin: 0 0.5rem;
+  transition: all 0.15s ease-in;
+  cursor: pointer;
+}
+.lined-nav ul li:hover {
+  color: black;
+}
+
+.nav-img {
+  width: 5%;
+  padding: 5px 0 0 0;
+  margin: 0 3rem;
+}
+
+.nav-img > img {
+  border-radius: 50%;
+}
+
+main {
+  background-color: rgb(245, 245, 245);
+}
+
+.hero-sec {
+  display: flex;
+  padding: 1rem;
+  min-height: 90vh;
+}
+
+.course-nav {
+  background-color: white;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.courses-btn {
+  background-color: rgb(176, 93, 255);
+  color: aliceblue;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.main-logo {
+  background-color: white;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  width: 80%;
+  padding: 4rem;
+}
+.main-logo * {
+  margin-bottom: 30px;
+}
+.main-logo img {
+  width: 30rem;
+  max-width: 20rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.blog-sec {
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.blog-card {
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 0 1rem;
+}
+.blog-card img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.ham-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.ham-menu div {
+  width: 2rem;
+  border: solid 0.2rem white;
+  border-radius: 1rem;
+  margin: 2px;
+}
+
+.text-content {
+  padding: 1rem;
+}
+.text-content * {
+  margin: 1rem 0;
+}
+
+.author {
+  color: rgb(176, 93, 255);
+  font-weight: bold;
+}
+
+footer {
+  background-color: rgb(176, 93, 255);
+  display: flex;
+  padding: 2rem;
+  color: aliceblue;
+}
+footer * {
+  width: 100%;
+}
+footer ul {
+  list-style-type: none;
+  display: flex;
+  color: aliceblue;
+  font-weight: bold;
+  justify-content: space-around;
+  align-items: center;
+}
+footer li {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .lined-nav {
+    display: none;
+  }
+  .hero-sec {
+    flex-direction: column;
+  }
+  .main-logo {
+    order: 1;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+  .course-nav {
+    order: 2;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1em;
+  }
+  .main-logo {
+    height: 85vh;
+  }
+  .blog-sec {
+    flex-direction: column;
+  }
+  .blog-card {
+    margin-bottom: 1rem;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer ul {
+    margin-top: 2rem;
+  }
+  footer ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(30px);
+            backdrop-filter: blur(30px);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  footer ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+@media (min-width: 769px) {
+  .ham-menu {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
